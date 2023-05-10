@@ -5,8 +5,8 @@
                 <v-icon class="grey--text" @click="drawer = !drawer">menu</v-icon>
             </span>
             <v-spacer></v-spacer>
-            <v-toolbar-title class="grey--text">
-                <span>ORCHARD</span>
+            <v-toolbar-title class="text-uppercase grey--text">
+                <span>Orchard</span>
             </v-toolbar-title>
             <v-spacer></v-spacer>
             <span>
