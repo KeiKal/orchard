@@ -1,6 +1,6 @@
 <template>
     <nav>
-        <v-toolbar flat app>
+        <v-app-bar flat fixed>
             <v-toolbar-title class="grey--text">
                 <span>ORCHARD</span>
             </v-toolbar-title>
@@ -8,7 +8,7 @@
             <span>
                 <v-icon>exit_to_app</v-icon>
             </span>
-        </v-toolbar>
+        </v-app-bar>
     </nav>
 </template>
 <script>
