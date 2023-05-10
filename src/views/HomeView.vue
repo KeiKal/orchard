@@ -5,7 +5,7 @@
             <v-flex xs12 sm12 md6 lg4 v-for="imageUrl in imageUrls2" :key="imageUrl">
               <v-card class="text-xs-center ma-3" flat>
                 <v-responsive class="pt-4" @click="showPopup= true">
-                  <v-img :src="require('@/assets/component-02/' + imageUrl)"></v-img>
+                  <v-img :src="require('@/assets/component-02/' + imageUrl)" class="hovered"></v-img>
                 </v-responsive>
                 <v-card-text>
                   <div class="subheading">{{ imageUrl }}</div>
@@ -27,7 +27,7 @@
             <v-flex xs12 sm12 md6 lg4 v-for="imageUrl in imageUrls" :key="imageUrl">
               <v-card class="text-xs-center ma-3" flat>
                 <v-responsive class="pt-4" @click="showPopup = true">
-                  <v-img :src="require('@/assets/component-01/' + imageUrl)"></v-img>
+                  <v-img :src="require('@/assets/component-01/' + imageUrl)" class="hovered"></v-img>
                 </v-responsive>
                 <v-card-text>
                   <div class="subheading">{{ imageUrl }}</div>
@@ -69,7 +69,6 @@ export default {
         'Image-02.jpg',
         'Image-03.jpg',
       ],
-      isHovered: false,
       showPopup: false
     }
   }
@@ -89,6 +88,16 @@ export default {
   justify-content: center;
   align-items: center;
   overflow: auto;
+}
+
+.hovered:hover {
+  transform: scale(1.05);
+  transition: .3s;
+}
+
+.hovered {
+  transform: scale(1);
+  transition: .3s;
 }
 
 .popup img {
