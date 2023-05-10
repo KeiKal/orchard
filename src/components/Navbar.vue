@@ -14,7 +14,7 @@
             </span>
         </v-app-bar>
 
-        <v-navigation-drawer app v-model="drawer" class="grey">
+        <v-navigation-drawer app v-model="drawer" class="green">
             
         </v-navigation-drawer>
     </nav>

@@ -3,7 +3,7 @@
     <v-container class="ma-5">
       <v-layout fluid row wrap>
             <v-flex xs12 sm6 md6 lg4 v-for="imageUrl in imageUrls2" :key="imageUrl">
-              <v-card class="text-xs-center ma-3">
+              <v-card class="text-xs-center ma-3" flat>
                 <v-responsive class="pt-4">
                   <v-img :src="require('@/assets/component-02/' + imageUrl)"></v-img>
                 </v-responsive>
@@ -11,7 +11,7 @@
                   <div class="subheading"></div>
                   <div class="grey--text"></div>
                 </v-card-text>
-                  <v-btn color="primary" @click="openPopup">Open Popup</v-btn>
+                  <v-btn small color="grey--text" @click="openPopup">View</v-btn>
                   <popup></popup>
               </v-card>
               
@@ -19,7 +19,7 @@
         </v-layout>
         <v-layout row wrap fluid>
             <v-flex xs12 sm12 md6 lg4 v-for="imageUrl in imageUrls" :key="imageUrl">
-              <v-card class="text-xs-center ma-3">
+              <v-card class="text-xs-center ma-3" flat>
                 <v-responsive class="pt-4">
                   <v-img :src="require('@/assets/component-01/' + imageUrl)"></v-img>
                 </v-responsive>
@@ -27,7 +27,7 @@
                   <div class="subheading"></div>
                   <div class="grey--text"></div>
                 </v-card-text>
-                  <v-btn color="primary" @click="openPopup">Open Popup</v-btn>
+                  <v-btn small color="grey--text" @click="openPopup">View</v-btn>
                   <popup></popup>
               </v-card>
             </v-flex>
