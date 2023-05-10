@@ -28,3 +28,4 @@ i wanted to try vue and as i can see it has alot of templates to choose from. an
 for the UI i used vuetify 2 and im not that familiar to the features and yet i still created contents on the page. looking forward to do more. 
 for the routing i used router which is included in the package. 
 there were difficulties along the process but i think with additional time i could do more.
+for the build tools i used npm webpack.
