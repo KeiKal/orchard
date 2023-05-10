@@ -1,12 +1,20 @@
 <template>
   <div class="home">
-    <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto, rem minima quisquam hic consequatur adipisci pariatur corrupti inventore ea eum suscipit nostrum? Ipsum adipisci quas cupiditate magnam, cum praesentium ea.</h4>
+    <div v-for="imageUrl in imageUrls" :key="imageUrl">
+        <v-img :src="require('@/assets/component-01/' + imageUrl)" ></v-img>
+      </div>
   </div>
 </template>
 
 <script>
-
 export default {
-
+  data() {
+    return {
+      imageUrls: [
+        'Image-01.jpg',
+        'Image-02.jpg',
+      ]
+    }
+  },
 }
 </script>
